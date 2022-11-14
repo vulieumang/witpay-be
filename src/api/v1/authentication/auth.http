@@ -1,0 +1,26 @@
+@domain = http://localhost:3001
+@apiVer = v1
+@controller = authentication
+
+POST {{domain}}/api/{{apiVer}}/{{controller}}/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "DDDD",
+    "password": "verify",
+    "phone": 234324234
+}
+
+###
+
+POST {{domain}}/api/{{apiVer}}/{{controller}}/login
+content-type: application/json
+
+{
+    "username": "DDDD",
+    "password": "verify"
+}
+
+###
+
+
